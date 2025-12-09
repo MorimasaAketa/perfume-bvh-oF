@@ -20,6 +20,7 @@
 
 #include "ofxSTLExporter.h"
 
+
 ofxSTLExporter::ofxSTLExporter(){
 	useASCIIFormat(false);
 }

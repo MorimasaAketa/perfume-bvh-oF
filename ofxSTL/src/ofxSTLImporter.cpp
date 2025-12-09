@@ -20,6 +20,7 @@
 
 #include "ofxSTLImporter.h"
 
+
 ofxSTLImporter::ofxSTLImporter(){
 	
 }
@@ -29,8 +30,8 @@ ofxSTLImporter::~ofxSTLImporter(){
 }
 
 void ofxSTLImporter::loadSTL(string path){
-	ifstream myFile;
-	myFile.open(path.c_str(), ios::in);
+	std::ifstream myFile;
+	myFile.open(path.c_str(), std::ios::in);
 	if(!myFile.is_open()){
 		ofLog(OF_LOG_ERROR, "ofxSTLImporter::loadSTL - could not open file");
 		return;
@@ -50,8 +51,8 @@ string ofxSTLImporter::getModelName(){
 	return modelName;	
 }
 
-bool ofxSTLImporter::isASCII(ifstream& myFile){
-	myFile.seekg(ios::beg);
+bool ofxSTLImporter::isASCII(std::ifstream& myFile){
+	myFile.seekg(std::ios::beg);
 	char fileHeader[5];
 	myFile.read(fileHeader, 5);
 	string solidWord("solid");

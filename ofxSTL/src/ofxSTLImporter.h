@@ -40,5 +40,5 @@ protected:
 	ofxSTLBinaryReader binaryReader;
 	ofxSTLASCIIReader asciiReader;
 	unsigned int lineIndex;
-	bool isASCII(ifstream& myFile);
+	bool isASCII(std::ifstream& myFile);
 };
