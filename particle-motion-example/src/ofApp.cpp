@@ -83,8 +83,8 @@ public:
 			if (v0.squareDistance(v1) == 0) continue;
 			if (v1.squareDistance(v2) == 0) continue;
 			
-			const ofVec3f d0 = (v0 - v1).normalized();
-			const ofVec3f d1 = (v1 - v2).normalized();
+			const ofVec3f d0 = (v0 - v1).getNormalized();
+			const ofVec3f d1 = (v1 - v2).getNormalized();
 			
 			v += (d0).dot(d1);
 		}
@@ -171,7 +171,7 @@ public:
 					particles[particle_index].pos.set(p);
 					
 					particle_index++;
-					if (particle_index > particles.size())
+					if (particle_index >=of  particles.size())
 						particle_index = 0;
 				}
 			}
@@ -249,7 +249,7 @@ void ofApp::setup()
 		particle_shapes[i].setup(bvh[i]);
 	}
 	
-	player.loadSound("Perfume_globalsite_sound.wav");
+	player.load("Perfume_globalsite_sound.wav");
 	player.play();
 }
 
@@ -292,7 +292,7 @@ void ofApp::draw()
 	glLineWidth(2);
 	
 	cam.begin();
-	ofRotateY(ofGetElapsedTimef() * 10);
+	ofRotateYDeg(ofGetElapsedTimef() * 10);
 	ofTranslate(-center);
 	
 	for (int i = 0; i < NUM_ACTOR; i++)
