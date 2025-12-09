@@ -7,12 +7,6 @@
 		<ClCompile Include="src\main.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
-		<ClCompile Include="src\main.cpp">
-			<Filter>src</Filter>
-		</ClCompile>
-		<ClCompile Include="src\ofApp.cpp">
-			<Filter>src</Filter>
-		</ClCompile>
 		<ClCompile Include="..\..\..\addons\ofxBvh\src\ofxBvh.cpp">
 			<Filter>addons\ofxBvh\src</Filter>
 		</ClCompile>
@@ -22,19 +16,16 @@
 			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons">
-			<UniqueIdentifier>{0C28115C--939-2-4E-BB-B-74A-B826679D31FB}</UniqueIdentifier>
+			<UniqueIdentifier>{59EE34A5--D6A-A-4A-5C-B-ABB-227B70655FE8}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxBvh">
-			<UniqueIdentifier>{0474AE9B--77D-E-40-4A-B-5F8-5181ADB33FA2}</UniqueIdentifier>
+			<UniqueIdentifier>{7DB9D656--322-D-49-EA-9-2FF-F1C7D861B140}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxBvh\src">
-			<UniqueIdentifier>{26C3FCAE--E7B-F-40-47-9-595-24B26350C1BA}</UniqueIdentifier>
+			<UniqueIdentifier>{1074983A--A54-0-43-B1-A-DA5-2824F4B0F90C}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>
-		<ClInclude Include="src\ofApp.h">
-			<Filter>src</Filter>
-		</ClInclude>
 		<ClInclude Include="src\ofApp.h">
 			<Filter>src</Filter>
 		</ClInclude>

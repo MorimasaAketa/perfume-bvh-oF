@@ -26,7 +26,7 @@
 class ofxSTLBinaryReader: public ofxSTLReaderBase{
 public:
 	
-	void readFile(ifstream& myFile, vector<ofxSTLFacet>& facets){
+	void readFile(std::ifstream& myFile, vector<ofxSTLFacet>& facets){
 		unsigned int getPosition = 80;
 		myFile.seekg(getPosition);
 		unsigned int numFacets = 0;
@@ -40,16 +40,16 @@ public:
 		}
 	}
 	
-	template<class T> void readObject(ifstream& myFile, T& object){
+	template<class T> void readObject(std::ifstream& myFile, T& object){
 		int numBytes = sizeof(T);
 		myFile.read((char*)&object, numBytes);
 	}
-	void readVector(ifstream& myFile, ofPoint& vec){
+	void readVector(std::ifstream& myFile, ofPoint& vec){
 		readObject(myFile, vec.x);
 		readObject(myFile, vec.y);
 		readObject(myFile, vec.z);
 	}
-	void readFacet(ifstream& myFile, ofxSTLFacet& facet){
+	void readFacet(std::ifstream& myFile, ofxSTLFacet& facet){
 		readVector(myFile, facet.normal);
 		readVector(myFile, facet.vert1);
 		readVector(myFile, facet.vert2);

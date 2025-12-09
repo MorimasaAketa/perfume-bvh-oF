@@ -7,12 +7,6 @@
 		<ClCompile Include="src\main.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
-		<ClCompile Include="src\main.cpp">
-			<Filter>src</Filter>
-		</ClCompile>
-		<ClCompile Include="src\ofApp.cpp">
-			<Filter>src</Filter>
-		</ClCompile>
 		<ClCompile Include="..\..\..\addons\ofxBvh\src\ofxBvh.cpp">
 			<Filter>addons\ofxBvh\src</Filter>
 		</ClCompile>
@@ -31,28 +25,28 @@
 			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons">
-			<UniqueIdentifier>{81DD5DE0--AA7-0-47-93-9-892-882D82ED0AA5}</UniqueIdentifier>
+			<UniqueIdentifier>{2BF494BB--ACC-B-4A-70-9-4DB-DAE83D079651}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxBvh">
-			<UniqueIdentifier>{9A6629DA--80B-6-4A-23-B-91F-8CBE78B072F5}</UniqueIdentifier>
+			<UniqueIdentifier>{8C21FF73--82C-8-41-16-B-06E-DD76155277BA}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxBvh\src">
-			<UniqueIdentifier>{A9B42C31--E97-B-42-63-A-E82-7938BC572CA6}</UniqueIdentifier>
+			<UniqueIdentifier>{10C932FA--B37-4-41-02-9-EB5-DE831B749428}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxMarchingCubes">
-			<UniqueIdentifier>{454E0918--AD6-B-46-EE-B-492-2AF6BC1B019D}</UniqueIdentifier>
+			<UniqueIdentifier>{0653BE8B--6A7-A-4F-BD-B-842-470B865BF388}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxMarchingCubes\src">
-			<UniqueIdentifier>{85FED7D7--A14-0-42-25-9-7DF-837A006D4BCF}</UniqueIdentifier>
+			<UniqueIdentifier>{1B0ABA2C--6A7-6-45-6F-A-678-96703E24AA9B}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxSTL">
-			<UniqueIdentifier>{B7678B55--53E-D-43-31-A-D94-F59422073A76}</UniqueIdentifier>
+			<UniqueIdentifier>{15BF9AF1--BB9-B-46-37-8-B92-140FE790915A}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxSTL\src">
-			<UniqueIdentifier>{3A06D1F8--A7C-C-4A-32-A-209-035DFEC71484}</UniqueIdentifier>
+			<UniqueIdentifier>{0D9B2507--420-2-42-4D-8-023-B9643FC565E0}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="addons\ofxSTL\src\utils">
-			<UniqueIdentifier>{ED425D7A--62D-6-4B-B0-B-04D-D3CE58E56232}</UniqueIdentifier>
+			<UniqueIdentifier>{1D371733--7AF-4-4F-A4-8-1BF-7D16761C64FB}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>
@@ -60,9 +54,6 @@
 			<Filter>src</Filter>
 		</ClInclude>
 		<ClInclude Include="src\MetaBall.h">
-			<Filter>src</Filter>
-		</ClInclude>
-		<ClInclude Include="src\ofApp.h">
 			<Filter>src</Filter>
 		</ClInclude>
 		<ClInclude Include="..\..\..\addons\ofxBvh\src\ofxBvh.h">

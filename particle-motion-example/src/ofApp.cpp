@@ -171,7 +171,7 @@ public:
 					particles[particle_index].pos.set(p);
 					
 					particle_index++;
-					if (particle_index >=of  particles.size())
+					if (particle_index >= particles.size())
 						particle_index = 0;
 				}
 			}
@@ -222,7 +222,6 @@ const size_t NUM_ACTOR = 3;
 vector<ParticleShape> particle_shapes;
 vector<ofxBvh> bvh;
 
-ofSoundPlayer player;
 
 ofVec3f center;
 
@@ -249,7 +248,7 @@ void ofApp::setup()
 		particle_shapes[i].setup(bvh[i]);
 	}
 	
-	player.load("Perfume_globalsite_sound.wav");
+	player.loadSound("Perfume_globalsite_sound.wav");
 	player.play();
 }
 

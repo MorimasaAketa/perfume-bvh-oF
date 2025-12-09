@@ -29,7 +29,7 @@ public:
 		modelName = "";
 	}
 	
-	void readFile(ifstream& myFile, vector<ofxSTLFacet>& facets){
+	void readFile(std::ifstream &myFile, vector<ofxSTLFacet> & facets) {
 		lineIndex = 0;
 		unsigned int fileSize;
 		string line;
