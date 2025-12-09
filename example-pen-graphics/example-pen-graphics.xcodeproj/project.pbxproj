@@ -1,15 +1,18 @@
 {
+	"_OFProjectGeneratorVersion": "0.103.0",
 	"archiveVersion": "1",
 	"classes": {},
 	"objectVersion": "54",
 	"objects": {
-		"0E0B9930-FE38-4290-92A3-FBF09B9FA93A": {
-			"explicitFileType": "sourcecode.c.h",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "ofxBvh.h",
-			"path": "../../../addons/ofxBvh/src/ofxBvh.h",
-			"sourceTree": "SOURCE_ROOT"
+		"038A5BF6-F561-40DA-9CD5-93ED37F7F3BF": {
+			"children": [
+				"56E10579-066F-4498-B39D-406783C197E8",
+				"997295B3-FBDD-4BB7-8813-0360537E4B08"
+			],
+			"isa": "PBXGroup",
+			"name": "src",
+			"path": "src",
+			"sourceTree": "<group>"
 		},
 		"191CD6FA2847E21E0085CBB6": {
 			"fileEncoding": "4",
@@ -26,6 +29,7 @@
 			"sourceTree": "SOURCE_ROOT"
 		},
 		"19B789C429E5AB4A0082E9B8": {
+			"alwaysOutOfDate": "1",
 			"buildActionMask": "2147483647",
 			"files": [],
 			"inputFileListPaths": [],
@@ -38,44 +42,48 @@
 			"shellScript": "\"$OF_PATH/scripts/osx/xcode_project.sh\"\n",
 			"showEnvVarsInLog": "0"
 		},
-		"1AAEE0E6-DA8B-451B-9FF1-B94707A2FD92": {
-			"fileRef": "BE6D7EC7-8629-4818-B6C6-C27DB6A4C86D",
+		"56E10579-066F-4498-B39D-406783C197E8": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.cpp",
+			"name": "ofxBvh.cpp",
+			"sourceTree": "<group>"
+		},
+		"997295B3-FBDD-4BB7-8813-0360537E4B08": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "ofxBvh.h",
+			"sourceTree": "<group>"
+		},
+		"B57F56A7-CBFD-472E-AAF9-AD6A79B0B4A6": {
+			"fileRef": "56E10579-066F-4498-B39D-406783C197E8",
 			"isa": "PBXBuildFile"
-		},
-		"4FCCD6C7-EC12-4A01-9380-E32242C360C9": {
-			"children": [
-				"BE6D7EC7-8629-4818-B6C6-C27DB6A4C86D",
-				"0E0B9930-FE38-4290-92A3-FBF09B9FA93A"
-			],
-			"isa": "PBXGroup",
-			"name": "src",
-			"path": "../../../addons/ofxBvh/src",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"748B01BE-8D30-4086-A3E7-D9833DE12000": {
-			"children": [
-				"4FCCD6C7-EC12-4A01-9380-E32242C360C9"
-			],
-			"isa": "PBXGroup",
-			"name": "ofxBvh",
-			"path": "../../../addons/ofxBvh",
-			"sourceTree": "SOURCE_ROOT"
 		},
 		"BB4B014C10F69532006C3DED": {
 			"children": [
-				"748B01BE-8D30-4086-A3E7-D9833DE12000"
+				"C3E5ED13-03C9-42E3-B35D-0CB4E9F0B6F4"
 			],
 			"isa": "PBXGroup",
 			"name": "addons",
 			"path": "../../../addons",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"C3E5ED13-03C9-42E3-B35D-0CB4E9F0B6F4": {
+			"children": [
+				"038A5BF6-F561-40DA-9CD5-93ED37F7F3BF"
+			],
+			"isa": "PBXGroup",
+			"name": "ofxBvh",
+			"path": "ofxBvh",
 			"sourceTree": "<group>"
 		},
-		"BE6D7EC7-8629-4818-B6C6-C27DB6A4C86D": {
-			"explicitFileType": "sourcecode.cpp.cpp",
+		"E0608D5B-1ED7-4D86-B309-1EF96185558F": {
 			"fileEncoding": "4",
 			"isa": "PBXFileReference",
-			"name": "ofxBvh.cpp",
-			"path": "../../../addons/ofxBvh/src/ofxBvh.cpp",
+			"lastKnownFileType": "folder",
+			"name": "data",
+			"path": "bin/data",
 			"sourceTree": "SOURCE_ROOT"
 		},
 		"E42962A92163ECCD00A6A9E2": {
@@ -88,7 +96,7 @@
 			"outputPaths": [],
 			"runOnlyForDeploymentPostprocessing": "0",
 			"shellPath": "/bin/sh",
-			"shellScript": "echo \"💾 Compiling Openframeworks\"\nxcodebuild -project \"$OF_PATH/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj\" -target openFrameworks -configuration \"${CONFIGURATION}\"  CLANG_CXX_LANGUAGE_STANDARD=$CLANG_CXX_LANGUAGE_STANDARD MACOSX_DEPLOYMENT_TARGET=$MACOSX_DEPLOYMENT_TARGET GCC_PREPROCESSOR_DEFINITIONS=$USER_PREPROCESSOR_DEFINITIONS\n",
+			"shellScript": "$OF_CORE_BUILD_COMMAND\n",
 			"showEnvVarsInLog": "0"
 		},
 		"E4A5B60F29BAAAE400C2D356": {
@@ -107,14 +115,16 @@
 				"E4B69E1C0A3A1BDC003C02F2",
 				"191EF70929D778A400F35F26",
 				"BB4B014C10F69532006C3DED",
-				"E4B69B5B0A3A1756003C02F2"
+				"E4B69B5B0A3A1756003C02F2",
+				"E0608D5B-1ED7-4D86-B309-1EF96185558F"
 			],
 			"isa": "PBXGroup",
 			"sourceTree": "<group>"
 		},
 		"E4B69B4C0A3A1720003C02F2": {
 			"attributes": {
-				"LastUpgradeCheck": "0600"
+				"BuildIndependentTargetsInParallel": "YES",
+				"LastUpgradeCheck": "1540"
 			},
 			"buildConfigurationList": "E4B69B4D0A3A1720003C02F2",
 			"compatibilityVersion": "Xcode 3.2",
@@ -180,7 +190,7 @@
 			"files": [
 				"E4B69E200A3A1BDC003C02F2",
 				"E4B69E210A3A1BDC003C02F2",
-				"1AAEE0E6-DA8B-451B-9FF1-B94707A2FD92"
+				"B57F56A7-CBFD-472E-AAF9-AD6A79B0B4A6"
 			],
 			"isa": "PBXSourcesBuildPhase",
 			"runOnlyForDeploymentPostprocessing": "0"
@@ -264,7 +274,7 @@
 				"OTHER_LDFLAGS": [
 					"$(OF_CORE_LIBS)",
 					"$(OF_CORE_FRAMEWORKS)",
-					"$(LIB_OF)"
+					"$(LIB_OF_RELEASE)"
 				],
 				"baseConfigurationReference": "E4EB6923138AFD0F00A09F29"
 			},
@@ -336,6 +346,5 @@
 			"sourceTree": "<group>"
 		}
 	},
-	"openFrameworksProjectGeneratorVersion": "21",
 	"rootObject": "E4B69B4C0A3A1720003C02F2"
 }

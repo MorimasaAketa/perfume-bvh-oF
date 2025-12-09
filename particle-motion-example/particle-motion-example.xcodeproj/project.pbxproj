@@ -1,4 +1,5 @@
 {
+	"_OFProjectGeneratorVersion": "0.103.0",
 	"archiveVersion": "1",
 	"classes": {},
 	"objectVersion": "54",
@@ -18,6 +19,7 @@
 			"sourceTree": "SOURCE_ROOT"
 		},
 		"19B789C429E5AB4A0082E9B8": {
+			"alwaysOutOfDate": "1",
 			"buildActionMask": "2147483647",
 			"files": [],
 			"inputFileListPaths": [],
@@ -30,45 +32,59 @@
 			"shellScript": "\"$OF_PATH/scripts/osx/xcode_project.sh\"\n",
 			"showEnvVarsInLog": "0"
 		},
-		"2827DDA6-B276-4188-A480-2AAA4C86096B": {
-			"children": [
-				"53D30491-290C-40BA-A4C0-D0E5A1C154E7"
-			],
-			"isa": "PBXGroup",
-			"name": "ofxBvh",
-			"path": "../../../addons/ofxBvh",
-			"sourceTree": "SOURCE_ROOT"
-		},
-		"3EBEFD30-8CC3-452E-A140-19120EF2853B": {
-			"explicitFileType": "sourcecode.c.h",
+		"6279AF61-6A95-4491-A9CD-379170B71931": {
 			"fileEncoding": "4",
 			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.cpp",
+			"name": "ofxBvh.cpp",
+			"sourceTree": "<group>"
+		},
+		"7BB6DE42-A413-4AA4-80F2-C25354CE3D54": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
 			"name": "ofxBvh.h",
-			"path": "../../../addons/ofxBvh/src/ofxBvh.h",
+			"sourceTree": "<group>"
+		},
+		"98E60AF9-C559-4219-833A-0EC0DD2569A1": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "folder",
+			"name": "data",
+			"path": "bin/data",
 			"sourceTree": "SOURCE_ROOT"
 		},
-		"53D30491-290C-40BA-A4C0-D0E5A1C154E7": {
+		"A2B94CEF-57E2-49B2-A8CD-1E9ADF14F10F": {
+			"fileRef": "6279AF61-6A95-4491-A9CD-379170B71931",
+			"isa": "PBXBuildFile"
+		},
+		"A62D628B-F7B1-4754-B990-8AEEAF4DBD5F": {
 			"children": [
-				"E8EAD5B5-E161-4BBA-8561-B6F6F937090D",
-				"3EBEFD30-8CC3-452E-A140-19120EF2853B"
+				"6279AF61-6A95-4491-A9CD-379170B71931",
+				"7BB6DE42-A413-4AA4-80F2-C25354CE3D54"
 			],
 			"isa": "PBXGroup",
 			"name": "src",
-			"path": "../../../addons/ofxBvh/src",
-			"sourceTree": "SOURCE_ROOT"
+			"path": "src",
+			"sourceTree": "<group>"
 		},
-		"8ADB6A01-BD3A-4C25-9819-A267C4E340E7": {
-			"fileRef": "E8EAD5B5-E161-4BBA-8561-B6F6F937090D",
-			"isa": "PBXBuildFile"
+		"AFD57A38-E414-47BA-8136-81399F70E6E0": {
+			"children": [
+				"A62D628B-F7B1-4754-B990-8AEEAF4DBD5F"
+			],
+			"isa": "PBXGroup",
+			"name": "ofxBvh",
+			"path": "ofxBvh",
+			"sourceTree": "<group>"
 		},
 		"BB4B014C10F69532006C3DED": {
 			"children": [
-				"2827DDA6-B276-4188-A480-2AAA4C86096B"
+				"AFD57A38-E414-47BA-8136-81399F70E6E0"
 			],
 			"isa": "PBXGroup",
 			"name": "addons",
 			"path": "../../../addons",
-			"sourceTree": "<group>"
+			"sourceTree": "SOURCE_ROOT"
 		},
 		"E42962A92163ECCD00A6A9E2": {
 			"alwaysOutOfDate": "1",
@@ -80,7 +96,7 @@
 			"outputPaths": [],
 			"runOnlyForDeploymentPostprocessing": "0",
 			"shellPath": "/bin/sh",
-			"shellScript": "echo \"💾 Compiling Openframeworks\"\nxcodebuild -project \"$OF_PATH/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj\" -target openFrameworks -configuration \"${CONFIGURATION}\"  CLANG_CXX_LANGUAGE_STANDARD=$CLANG_CXX_LANGUAGE_STANDARD MACOSX_DEPLOYMENT_TARGET=$MACOSX_DEPLOYMENT_TARGET GCC_PREPROCESSOR_DEFINITIONS=$USER_PREPROCESSOR_DEFINITIONS\n",
+			"shellScript": "$OF_CORE_BUILD_COMMAND\n",
 			"showEnvVarsInLog": "0"
 		},
 		"E4A5B60F29BAAAE400C2D356": {
@@ -99,14 +115,16 @@
 				"E4B69E1C0A3A1BDC003C02F2",
 				"191EF70929D778A400F35F26",
 				"BB4B014C10F69532006C3DED",
-				"E4B69B5B0A3A1756003C02F2"
+				"E4B69B5B0A3A1756003C02F2",
+				"98E60AF9-C559-4219-833A-0EC0DD2569A1"
 			],
 			"isa": "PBXGroup",
 			"sourceTree": "<group>"
 		},
 		"E4B69B4C0A3A1720003C02F2": {
 			"attributes": {
-				"LastUpgradeCheck": "0600"
+				"BuildIndependentTargetsInParallel": "YES",
+				"LastUpgradeCheck": "1540"
 			},
 			"buildConfigurationList": "E4B69B4D0A3A1720003C02F2",
 			"compatibilityVersion": "Xcode 3.2",
@@ -172,7 +190,7 @@
 			"files": [
 				"E4B69E200A3A1BDC003C02F2",
 				"E4B69E210A3A1BDC003C02F2",
-				"8ADB6A01-BD3A-4C25-9819-A267C4E340E7"
+				"A2B94CEF-57E2-49B2-A8CD-1E9ADF14F10F"
 			],
 			"isa": "PBXSourcesBuildPhase",
 			"runOnlyForDeploymentPostprocessing": "0"
@@ -256,7 +274,7 @@
 				"OTHER_LDFLAGS": [
 					"$(OF_CORE_LIBS)",
 					"$(OF_CORE_FRAMEWORKS)",
-					"$(LIB_OF)"
+					"$(LIB_OF_RELEASE)"
 				],
 				"baseConfigurationReference": "E4EB6923138AFD0F00A09F29"
 			},
@@ -326,16 +344,7 @@
 			"lastKnownFileType": "text.xcconfig",
 			"path": "Project.xcconfig",
 			"sourceTree": "<group>"
-		},
-		"E8EAD5B5-E161-4BBA-8561-B6F6F937090D": {
-			"explicitFileType": "sourcecode.cpp.cpp",
-			"fileEncoding": "4",
-			"isa": "PBXFileReference",
-			"name": "ofxBvh.cpp",
-			"path": "../../../addons/ofxBvh/src/ofxBvh.cpp",
-			"sourceTree": "SOURCE_ROOT"
 		}
 	},
-	"openFrameworksProjectGeneratorVersion": "21",
 	"rootObject": "E4B69B4C0A3A1720003C02F2"
 }
